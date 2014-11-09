@@ -21,7 +21,8 @@ public class Bezier extends Applet implements AdjustmentListener {
 		add("Center", drawZone);
 
 		int nsteps = 20;
-		hsbNsteps = new Scrollbar(Scrollbar.HORIZONTAL, 20, 10, 1, 60);
+		// Adjustment the bar. Scrollbar(Scrollbar.HORIZONTAL, 20, x, y, z). 
+		hsbNsteps = new Scrollbar(Scrollbar.HORIZONTAL, 20, 59, 60, 60); 
 		hsbNsteps.addAdjustmentListener(this);
 		controlPanel.setLayout(new GridLayout(2, 1, 2, 2));
 		controlPanel.add(hsbNsteps);
