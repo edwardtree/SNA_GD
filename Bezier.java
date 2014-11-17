@@ -43,7 +43,7 @@ public class Bezier extends Applet implements AdjustmentListener {
 
 class BezierCanvas extends Canvas implements MouseListener, MouseMotionListener {
 	Dimension boardSize;
-	Vector2d[] ctrlPts = new Vector2d[4];
+	Vector2d[] ctrlPts = new Vector2d[3];
 	int nsteps;
 	Image Buffer = null;
 	Graphics bufGraphics = null;
@@ -62,7 +62,7 @@ class BezierCanvas extends Canvas implements MouseListener, MouseMotionListener 
 		Buffer = createImage(w, h);
 		bufGraphics = Buffer.getGraphics();
 
-		for (int i = 0; i < 4; i++) {
+		for (int i = 0; i < 3; i++) {
 			ctrlPts[i] = new Vector2d((i + 1) * (boardSize.width / 5),
 					boardSize.height / 2);
 		}
@@ -83,33 +83,30 @@ class BezierCanvas extends Canvas implements MouseListener, MouseMotionListener 
 		// Draw the four points
 		bufGraphics.setColor(Color.white);
 		String d = "";
-		for (int i = 0; i < 4; i++) {
-			bufGraphics.fillRect((int) ctrlPts[i].x - 2,
-					(int) ctrlPts[i].y - 2, 5, 5);
-
-			d = d + "x[" + i + "] = " + (int) ctrlPts[i].x + ", y[" + i
-					+ "] = " + (int) ctrlPts[i].y + ";   ";
-
+		for (int i = 0; i < 3; i++) {
+			bufGraphics.fillRect((int) ctrlPts[i].x - 4,(int) ctrlPts[i].y - 2, 5, 5);
+			d = d + "x[" + i + "] = " + (int) ctrlPts[i].x + ", y[" + i + "] = " + (int) ctrlPts[i].y + ";   ";
+			System.out.format("d = %s \n", d);
 		}
 		// debugMsg (d);
 
 		// Draw the Bezier curve
 		bufGraphics.setColor(Color.blue);
 
-		double[] B = new double[4];
+		double[] B = new double[3];
 		Vector2d lastPt = new Vector2d();
 		for (int step = 0; step <= nsteps; step++) {
 			double t = (double) step / (double) nsteps;
 			double at = 1. - t;
 			B[0] = at * at * at;
-			B[1] = 3. * t * at * at;
-			B[2] = 3. * t * t * at;
-			B[3] = t * t * t;
+			B[1] = 3. * t  * at;
+			//B[2] = 3. * t * t * at;
+			B[2] = t * t * t;
 
 			Vector2d nextPt = new Vector2d();
 			nextPt.set(0., 0.);
 			d = "";
-			for (int p = 0; p < 4; p++) {
+			for (int p = 0; p < 3; p++) {
 				nextPt.x += ctrlPts[p].x * B[p];
 				nextPt.y += ctrlPts[p].y * B[p];
 			}
@@ -151,7 +148,7 @@ class BezierCanvas extends Canvas implements MouseListener, MouseMotionListener 
 	}
 
 	public void mousePressed(MouseEvent e) {
-		for (int i = 0; i < 4; i++) {
+		for (int i = 0; i < 3; i++) {
 			if (Math.abs(e.getX() - ctrlPts[i].x) < 5
 					&& Math.abs(e.getY() - ctrlPts[i].y) < 5)
 				dragging = i;
