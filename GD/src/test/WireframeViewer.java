@@ -1,16 +1,16 @@
 package test;
 
-import java.applet.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.lang.Math;
-import java.io.*;
-import java.nio.charset.Charset;
-import java.io.IOException;
-import java.nio.file.*;
+import java.applet.Applet;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Point;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
-
-import static java.lang.System.*;
 
 class vertice3D {
 	public double x, y, z;
@@ -18,6 +18,7 @@ class vertice3D {
 		x = X;
 		y = Y;
 		z = Z;
+		
 	}
 }
 
@@ -47,15 +48,15 @@ public class WireframeViewer extends Applet implements MouseListener,
 
 	int azimuth = 30, elevation = 35;
 
-	vertice3D[] init_vertices;
-	edge[] init_edges;
-
 	vertice3D[] vertices;
 	edge[] edges;
-	
+
+
 	File f = new File("C:/Users/firestation/workspace/Graph drawing/src/test/src/test/input.txt");
 	
 	public void init() {
+		
+		
 		
 		//File f = new File("C:\Users\firestation\workspace\Graph drawing\src\test\src\test/input.txt");
 		Scanner input = null;
@@ -74,63 +75,49 @@ public class WireframeViewer extends Applet implements MouseListener,
 		
 		System.out.printf("n = %d m = %d\n",n,m);
 		
-		count_vertice = n;
-		count_edges = m; // In order to declare vertice[] and edge[] to draw graph.
+
+		vertices = new vertice3D[n];
 		
-		double add_lng = 45;
-
-		init_vertices = new vertice3D[n];
-
-		double lat = 0, lng = 0, lat_radian, lng_radian, x_coordinate, y_coordinate, z_coordinate; // initial
-																									// angel
-
-		double R = 3;
-
+		double x,y,z;
+		
 		for (i = 0; i < n; i++) {
+			
+			/*
 			lat_radian = Math.toRadians(lat);
 			lng_radian = Math.toRadians(lng);
-
+			
 			// System.out.format("lat_radian = %.4f lng_radian = %.4f %n",lat_radian,lng_radian);
 			x_coordinate = R * Math.cos(lat_radian) * Math.cos(lng_radian);
 			y_coordinate = R * Math.cos(lat_radian) * Math.sin(lng_radian);
 			z_coordinate = R * Math.sin(lat_radian);
-
-			init_vertices[i] = new vertice3D(x_coordinate, y_coordinate,
-					z_coordinate);
-
-			// lat+=10;
-			lng += add_lng;
+			*/
+			
+			x = input.nextDouble();
+			y = input.nextDouble();
+			z = input.nextDouble();			
+			
+			//System.out.printf("vertices.x = %f vertices.y = %f vertices.y = %f\n",x,y,z);
+			
+			
+			vertices[i] = new vertice3D(x, y, z);
+			
+			System.out.printf("vertices.x = %f vertices.y = %f vertices.y = %f\n",vertices[i].x,vertices[i].y,vertices[i].z);
+			
+		}
+		edges = new edge[m];
+		
+		int a, b;
+		
+		for (i = 0; i < m; i++) {
+			
+			a = input.nextInt() ;
+			b = input.nextInt() ;
+			System.out.printf("edges.a = %d edges.b = %d ",a,b);
+			
+			edges[i] = new edge(a , b);
 
 		}
-		init_edges = new edge[m];
-
-		for (i = 0, j = n; i < m | j > 0; i++, j = j - 2) {
-			System.out.format("lat_radian = %d lng_radian = %d %n", i, j);
-			init_edges[i] = new edge(i * 2, j - 1);
-
-		}
 		
-		//double length = 0.0;
-		
-		
-				
-		
-		
-		/* finish calculation and store value to the vertices and edges. */
-
-		vertices = new vertice3D[count_vertice];
-
-		edges = new edge[count_edges];
-
-		for (i = 0; i < count_vertice; i++) {
-
-			vertices[i] = new vertice3D(init_vertices[i].x, init_vertices[i].y,
-					init_vertices[i].z);
-		}
-		for (i = 0, j = n; i < count_edges | j > 0; i++, j = j - 2) {
-			edges[i] = new edge(init_edges[i].a, init_edges[i].b);
-		}
-
 		backbuffer = createImage(width, height);
 		backg = backbuffer.getGraphics();
 		drawWireframe(backg);
@@ -139,12 +126,6 @@ public class WireframeViewer extends Applet implements MouseListener,
 		addMouseMotionListener(this);
 	}
 
-	
-	
-	
-	
-	
-	
 	
 	
 	void drawWireframe(Graphics g) {
@@ -161,7 +142,7 @@ public class WireframeViewer extends Applet implements MouseListener,
 		Point[] points;
 		points = new Point[vertices.length];
 		int j;
-		int scaleFactor = width / 20; // fix the size of graph
+		int scaleFactor = width / 30; // fix the size of graph
 		float near = 3; // distance from eye to near plane
 		float nearToObj = 1.5f; // distance from near plane to center of object
 		for (j = 0; j < vertices.length; ++j) {
