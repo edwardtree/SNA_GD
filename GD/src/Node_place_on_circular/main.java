@@ -37,7 +37,7 @@ public class main {
 		int i;
 		
 		
-		File f = new File("C:/Users/firestation/workspace/Graph drawing/src/Node_place_on_circular/test_input.txt");
+		File f = new File("C:/Users/firestation/workspace/Graph drawing/src/Node_place_on_circular/10_vertices_9_edges.txt");
 		
 		Scanner input = null;
 		try {
@@ -97,9 +97,7 @@ public class main {
 	            	
 	        //out.println("vertice" + i + "	x =		" + vertice_arr[i].x + "	y =		" + vertice_arr[i].y + "	z =		" + 0);
 	          out.println(vertice_arr[i].x + " " + vertice_arr[i].y + " " + 0);
-
 	        out.close();
-
 	      } catch (FileNotFoundException e) {
 	        e.printStackTrace();
 	      }
@@ -179,7 +177,7 @@ public class main {
 		}
 		
 		try {
-	        PrintStream out = new PrintStream(new FileOutputStream("C:/Users/firestation/workspace/Graph drawing/src/Node_place_on_circular/test_output1.txt"));
+	        PrintStream out = new PrintStream(new FileOutputStream("C:/Users/firestation/workspace/Graph drawing/src/Edge_bundling/100_vertices_158_edges.txt"));
 	        
 	        
 	        for( i=0 ; i<n ; i++)
@@ -196,7 +194,7 @@ public class main {
 	        	
 	        	for( j=0 ; j<ordering_V.length ; j++ )
 				{
-        			System.out.printf("x%d = %d \n",j,ordering_V[j]);
+        			//System.out.printf("x%d = %d \n",j,ordering_V[j]);
 				}
 	        	
 	        	improved_ordering_V = new int[ordering_V.length];
@@ -205,7 +203,7 @@ public class main {
 			
 	        	for( j=0 ; j<ordering_V.length ; j++ )
 				{
-        			System.out.println("improved_ordering_V[" + (i+j) +  "] = " + improved_ordering_V[j] + "\n");
+        			//System.out.println("improved_ordering_V[" + (i+j) +  "] = " + improved_ordering_V[j] + "\n");
 				}
 	        	int k = 0;
 	        	int tmp1 = 0;
@@ -233,12 +231,12 @@ public class main {
 	        	out.println("\n");
 	        	*/
 	        }
-	        /*
+	        
 	        for( j=0 ; j<n ; j++ )
 			{
-    		out.println("vertices_orderiing[" + j +  "] = " + vertices_orderiing[j] + "\n");
+	        	System.out.printf("vertices_orderiing[" + j +  "] = " + vertices_orderiing[j] + "\n");
 			}
-	        */
+	        
 
 	        
 	        out.println( n +  " " + m + "\n");	
@@ -254,6 +252,8 @@ public class main {
 		    
 		    int tmp = 0, print_k=0;
 		    
+		    int [][] final_graph_edges_numbers = new int[2][m];
+		    
 		    for( i=0 ; i<n ; i++)
 		    	for( j=0 ; j<m ; j++ )
 		    	{	
@@ -266,11 +266,15 @@ public class main {
 		    			{
 		    				if(graph_edges_numbers[1][j] == vertices_orderiing[k]) print_k = k;
 		    			}
+		    			final_graph_edges_numbers[0][tmp] = i;
+		    			final_graph_edges_numbers[1][tmp] = print_k;
+		    			tmp++;
 		    			out.println(print_k +"\n");
 		    		}
 		    	}
-		    
+		    /*
 		    out.println("\n");
+		    
 		    
 		    for( i=0 ; i<n ; i++)
 		    	for( j=0 ; j<m ; j++ )
@@ -287,7 +291,36 @@ public class main {
 		    			out.println(print_k + " 1" +"\n");
 		    		}
 		    	}
+		    */
 		    
+		    
+		    
+		    double Before_replace_length=0,After_replace_length=0;
+		    
+        	for( j = 0 ; j < m ; j++)
+			{
+
+        		Before_replace_length += length(vertice_arr[graph_edges_numbers[0][j]].x-vertice_arr[graph_edges_numbers[1][j]].x,vertice_arr[graph_edges_numbers[0][j]].y-vertice_arr[graph_edges_numbers[1][j]].y);
+        			System.out.printf("j = %d	%f\n",j,length(vertice_arr[graph_edges_numbers[0][j]].x-vertice_arr[graph_edges_numbers[1][j]].x,vertice_arr[graph_edges_numbers[0][j]].y-vertice_arr[graph_edges_numbers[1][j]].y));
+        			
+			}
+		    
+        	System.out.printf("Before_replace_length = %f\n\n\n",Before_replace_length);
+        	
+		    for( i = 0 ; i < m ; i++)
+			{
+        			After_replace_length += length(vertice_arr[final_graph_edges_numbers[0][i]].x-vertice_arr[final_graph_edges_numbers[1][i]].x,vertice_arr[final_graph_edges_numbers[0][i]].y-vertice_arr[final_graph_edges_numbers[1][i]].y);
+        			System.out.printf("i = %d	%f\n",i,length(vertice_arr[final_graph_edges_numbers[0][i]].x-vertice_arr[final_graph_edges_numbers[1][i]].x,vertice_arr[final_graph_edges_numbers[0][i]].y-vertice_arr[final_graph_edges_numbers[1][i]].y));
+        			
+			}
+		    System.out.printf("After_replace_length = %.12f\n\n\n",After_replace_length);
+		    /*
+	        for( j=0 ; j<m ; j++ )
+			{
+	        	System.out.printf("final_graph_edges_numbers[0][%d].x = %d	final_graph_edges_numbers[0][%d].y = %d\n",j,final_graph_edges_numbers[0][j],j,final_graph_edges_numbers[1][j]);
+			}
+	        
+		    */
         out.close();
 
 		} catch (FileNotFoundException e) {
@@ -297,6 +330,9 @@ public class main {
 		
 
 	}
-
+	
+	static double length(double a,double b)
+	{
+		return Math.sqrt(a*a+b*b);	
+	}
 }
-

@@ -1,0 +1,844 @@
+table_arr[0].element[0] = 0
+table_arr[0].element[1] = 0
+table_arr[0].element[2] = 0
+table_arr[0].element[3] = 0
+table_arr[0].element[4] = 0
+table_arr[0].element[5] = 0
+
+
+
+table_arr[1].element[0] = 1
+table_arr[1].element[1] = 0
+table_arr[1].element[2] = 0
+table_arr[1].element[3] = 0
+table_arr[1].element[4] = 0
+table_arr[1].element[5] = 0
+
+
+
+table_arr[2].element[0] = 0
+table_arr[2].element[1] = 1
+table_arr[2].element[2] = 0
+table_arr[2].element[3] = 0
+table_arr[2].element[4] = 0
+table_arr[2].element[5] = 0
+
+
+
+table_arr[3].element[0] = 1
+table_arr[3].element[1] = 1
+table_arr[3].element[2] = 0
+table_arr[3].element[3] = 0
+table_arr[3].element[4] = 0
+table_arr[3].element[5] = 0
+
+
+
+table_arr[4].element[0] = 0
+table_arr[4].element[1] = 0
+table_arr[4].element[2] = 1
+table_arr[4].element[3] = 0
+table_arr[4].element[4] = 0
+table_arr[4].element[5] = 0
+
+
+
+table_arr[5].element[0] = 1
+table_arr[5].element[1] = 0
+table_arr[5].element[2] = 1
+table_arr[5].element[3] = 0
+table_arr[5].element[4] = 0
+table_arr[5].element[5] = 0
+
+
+
+table_arr[6].element[0] = 0
+table_arr[6].element[1] = 1
+table_arr[6].element[2] = 1
+table_arr[6].element[3] = 0
+table_arr[6].element[4] = 0
+table_arr[6].element[5] = 0
+
+
+
+table_arr[7].element[0] = 1
+table_arr[7].element[1] = 1
+table_arr[7].element[2] = 1
+table_arr[7].element[3] = 0
+table_arr[7].element[4] = 0
+table_arr[7].element[5] = 0
+
+
+
+table_arr[8].element[0] = 0
+table_arr[8].element[1] = 0
+table_arr[8].element[2] = 0
+table_arr[8].element[3] = 1
+table_arr[8].element[4] = 0
+table_arr[8].element[5] = 0
+
+
+
+table_arr[9].element[0] = 1
+table_arr[9].element[1] = 0
+table_arr[9].element[2] = 0
+table_arr[9].element[3] = 1
+table_arr[9].element[4] = 0
+table_arr[9].element[5] = 0
+
+
+
+table_arr[10].element[0] = 0
+table_arr[10].element[1] = 1
+table_arr[10].element[2] = 0
+table_arr[10].element[3] = 1
+table_arr[10].element[4] = 0
+table_arr[10].element[5] = 0
+
+
+
+table_arr[11].element[0] = 1
+table_arr[11].element[1] = 1
+table_arr[11].element[2] = 0
+table_arr[11].element[3] = 1
+table_arr[11].element[4] = 0
+table_arr[11].element[5] = 0
+
+
+
+table_arr[12].element[0] = 0
+table_arr[12].element[1] = 0
+table_arr[12].element[2] = 1
+table_arr[12].element[3] = 1
+table_arr[12].element[4] = 0
+table_arr[12].element[5] = 0
+
+
+
+table_arr[13].element[0] = 1
+table_arr[13].element[1] = 0
+table_arr[13].element[2] = 1
+table_arr[13].element[3] = 1
+table_arr[13].element[4] = 0
+table_arr[13].element[5] = 0
+
+
+
+table_arr[14].element[0] = 0
+table_arr[14].element[1] = 1
+table_arr[14].element[2] = 1
+table_arr[14].element[3] = 1
+table_arr[14].element[4] = 0
+table_arr[14].element[5] = 0
+
+
+
+table_arr[15].element[0] = 1
+table_arr[15].element[1] = 1
+table_arr[15].element[2] = 1
+table_arr[15].element[3] = 1
+table_arr[15].element[4] = 0
+table_arr[15].element[5] = 0
+
+
+
+table_arr[16].element[0] = 0
+table_arr[16].element[1] = 0
+table_arr[16].element[2] = 0
+table_arr[16].element[3] = 0
+table_arr[16].element[4] = 1
+table_arr[16].element[5] = 0
+
+
+
+table_arr[17].element[0] = 1
+table_arr[17].element[1] = 0
+table_arr[17].element[2] = 0
+table_arr[17].element[3] = 0
+table_arr[17].element[4] = 1
+table_arr[17].element[5] = 0
+
+
+
+table_arr[18].element[0] = 0
+table_arr[18].element[1] = 1
+table_arr[18].element[2] = 0
+table_arr[18].element[3] = 0
+table_arr[18].element[4] = 1
+table_arr[18].element[5] = 0
+
+
+
+table_arr[19].element[0] = 1
+table_arr[19].element[1] = 1
+table_arr[19].element[2] = 0
+table_arr[19].element[3] = 0
+table_arr[19].element[4] = 1
+table_arr[19].element[5] = 0
+
+
+
+table_arr[20].element[0] = 0
+table_arr[20].element[1] = 0
+table_arr[20].element[2] = 1
+table_arr[20].element[3] = 0
+table_arr[20].element[4] = 1
+table_arr[20].element[5] = 0
+
+
+
+table_arr[21].element[0] = 1
+table_arr[21].element[1] = 0
+table_arr[21].element[2] = 1
+table_arr[21].element[3] = 0
+table_arr[21].element[4] = 1
+table_arr[21].element[5] = 0
+
+
+
+table_arr[22].element[0] = 0
+table_arr[22].element[1] = 1
+table_arr[22].element[2] = 1
+table_arr[22].element[3] = 0
+table_arr[22].element[4] = 1
+table_arr[22].element[5] = 0
+
+
+
+table_arr[23].element[0] = 1
+table_arr[23].element[1] = 1
+table_arr[23].element[2] = 1
+table_arr[23].element[3] = 0
+table_arr[23].element[4] = 1
+table_arr[23].element[5] = 0
+
+
+
+table_arr[24].element[0] = 0
+table_arr[24].element[1] = 0
+table_arr[24].element[2] = 0
+table_arr[24].element[3] = 1
+table_arr[24].element[4] = 1
+table_arr[24].element[5] = 0
+
+
+
+table_arr[25].element[0] = 1
+table_arr[25].element[1] = 0
+table_arr[25].element[2] = 0
+table_arr[25].element[3] = 1
+table_arr[25].element[4] = 1
+table_arr[25].element[5] = 0
+
+
+
+table_arr[26].element[0] = 0
+table_arr[26].element[1] = 1
+table_arr[26].element[2] = 0
+table_arr[26].element[3] = 1
+table_arr[26].element[4] = 1
+table_arr[26].element[5] = 0
+
+
+
+table_arr[27].element[0] = 1
+table_arr[27].element[1] = 1
+table_arr[27].element[2] = 0
+table_arr[27].element[3] = 1
+table_arr[27].element[4] = 1
+table_arr[27].element[5] = 0
+
+
+
+table_arr[28].element[0] = 0
+table_arr[28].element[1] = 0
+table_arr[28].element[2] = 1
+table_arr[28].element[3] = 1
+table_arr[28].element[4] = 1
+table_arr[28].element[5] = 0
+
+
+
+table_arr[29].element[0] = 1
+table_arr[29].element[1] = 0
+table_arr[29].element[2] = 1
+table_arr[29].element[3] = 1
+table_arr[29].element[4] = 1
+table_arr[29].element[5] = 0
+
+
+
+table_arr[30].element[0] = 0
+table_arr[30].element[1] = 1
+table_arr[30].element[2] = 1
+table_arr[30].element[3] = 1
+table_arr[30].element[4] = 1
+table_arr[30].element[5] = 0
+
+
+
+table_arr[31].element[0] = 1
+table_arr[31].element[1] = 1
+table_arr[31].element[2] = 1
+table_arr[31].element[3] = 1
+table_arr[31].element[4] = 1
+table_arr[31].element[5] = 0
+
+
+
+table_arr[32].element[0] = 0
+table_arr[32].element[1] = 0
+table_arr[32].element[2] = 0
+table_arr[32].element[3] = 0
+table_arr[32].element[4] = 0
+table_arr[32].element[5] = 1
+
+
+
+table_arr[33].element[0] = 1
+table_arr[33].element[1] = 0
+table_arr[33].element[2] = 0
+table_arr[33].element[3] = 0
+table_arr[33].element[4] = 0
+table_arr[33].element[5] = 1
+
+
+
+table_arr[34].element[0] = 0
+table_arr[34].element[1] = 1
+table_arr[34].element[2] = 0
+table_arr[34].element[3] = 0
+table_arr[34].element[4] = 0
+table_arr[34].element[5] = 1
+
+
+
+table_arr[35].element[0] = 1
+table_arr[35].element[1] = 1
+table_arr[35].element[2] = 0
+table_arr[35].element[3] = 0
+table_arr[35].element[4] = 0
+table_arr[35].element[5] = 1
+
+
+
+table_arr[36].element[0] = 0
+table_arr[36].element[1] = 0
+table_arr[36].element[2] = 1
+table_arr[36].element[3] = 0
+table_arr[36].element[4] = 0
+table_arr[36].element[5] = 1
+
+
+
+table_arr[37].element[0] = 1
+table_arr[37].element[1] = 0
+table_arr[37].element[2] = 1
+table_arr[37].element[3] = 0
+table_arr[37].element[4] = 0
+table_arr[37].element[5] = 1
+
+
+
+table_arr[38].element[0] = 0
+table_arr[38].element[1] = 1
+table_arr[38].element[2] = 1
+table_arr[38].element[3] = 0
+table_arr[38].element[4] = 0
+table_arr[38].element[5] = 1
+
+
+
+table_arr[39].element[0] = 1
+table_arr[39].element[1] = 1
+table_arr[39].element[2] = 1
+table_arr[39].element[3] = 0
+table_arr[39].element[4] = 0
+table_arr[39].element[5] = 1
+
+
+
+table_arr[40].element[0] = 0
+table_arr[40].element[1] = 0
+table_arr[40].element[2] = 0
+table_arr[40].element[3] = 1
+table_arr[40].element[4] = 0
+table_arr[40].element[5] = 1
+
+
+
+table_arr[41].element[0] = 1
+table_arr[41].element[1] = 0
+table_arr[41].element[2] = 0
+table_arr[41].element[3] = 1
+table_arr[41].element[4] = 0
+table_arr[41].element[5] = 1
+
+
+
+table_arr[42].element[0] = 0
+table_arr[42].element[1] = 1
+table_arr[42].element[2] = 0
+table_arr[42].element[3] = 1
+table_arr[42].element[4] = 0
+table_arr[42].element[5] = 1
+
+
+
+table_arr[43].element[0] = 1
+table_arr[43].element[1] = 1
+table_arr[43].element[2] = 0
+table_arr[43].element[3] = 1
+table_arr[43].element[4] = 0
+table_arr[43].element[5] = 1
+
+
+
+table_arr[44].element[0] = 0
+table_arr[44].element[1] = 0
+table_arr[44].element[2] = 1
+table_arr[44].element[3] = 1
+table_arr[44].element[4] = 0
+table_arr[44].element[5] = 1
+
+
+
+table_arr[45].element[0] = 1
+table_arr[45].element[1] = 0
+table_arr[45].element[2] = 1
+table_arr[45].element[3] = 1
+table_arr[45].element[4] = 0
+table_arr[45].element[5] = 1
+
+
+
+table_arr[46].element[0] = 0
+table_arr[46].element[1] = 1
+table_arr[46].element[2] = 1
+table_arr[46].element[3] = 1
+table_arr[46].element[4] = 0
+table_arr[46].element[5] = 1
+
+
+
+table_arr[47].element[0] = 1
+table_arr[47].element[1] = 1
+table_arr[47].element[2] = 1
+table_arr[47].element[3] = 1
+table_arr[47].element[4] = 0
+table_arr[47].element[5] = 1
+
+
+
+table_arr[48].element[0] = 0
+table_arr[48].element[1] = 0
+table_arr[48].element[2] = 0
+table_arr[48].element[3] = 0
+table_arr[48].element[4] = 1
+table_arr[48].element[5] = 1
+
+
+
+table_arr[49].element[0] = 1
+table_arr[49].element[1] = 0
+table_arr[49].element[2] = 0
+table_arr[49].element[3] = 0
+table_arr[49].element[4] = 1
+table_arr[49].element[5] = 1
+
+
+
+table_arr[50].element[0] = 0
+table_arr[50].element[1] = 1
+table_arr[50].element[2] = 0
+table_arr[50].element[3] = 0
+table_arr[50].element[4] = 1
+table_arr[50].element[5] = 1
+
+
+
+table_arr[51].element[0] = 1
+table_arr[51].element[1] = 1
+table_arr[51].element[2] = 0
+table_arr[51].element[3] = 0
+table_arr[51].element[4] = 1
+table_arr[51].element[5] = 1
+
+
+
+table_arr[52].element[0] = 0
+table_arr[52].element[1] = 0
+table_arr[52].element[2] = 1
+table_arr[52].element[3] = 0
+table_arr[52].element[4] = 1
+table_arr[52].element[5] = 1
+
+
+
+table_arr[53].element[0] = 1
+table_arr[53].element[1] = 0
+table_arr[53].element[2] = 1
+table_arr[53].element[3] = 0
+table_arr[53].element[4] = 1
+table_arr[53].element[5] = 1
+
+
+
+table_arr[54].element[0] = 0
+table_arr[54].element[1] = 1
+table_arr[54].element[2] = 1
+table_arr[54].element[3] = 0
+table_arr[54].element[4] = 1
+table_arr[54].element[5] = 1
+
+
+
+table_arr[55].element[0] = 1
+table_arr[55].element[1] = 1
+table_arr[55].element[2] = 1
+table_arr[55].element[3] = 0
+table_arr[55].element[4] = 1
+table_arr[55].element[5] = 1
+
+
+
+table_arr[56].element[0] = 0
+table_arr[56].element[1] = 0
+table_arr[56].element[2] = 0
+table_arr[56].element[3] = 1
+table_arr[56].element[4] = 1
+table_arr[56].element[5] = 1
+
+
+
+table_arr[57].element[0] = 1
+table_arr[57].element[1] = 0
+table_arr[57].element[2] = 0
+table_arr[57].element[3] = 1
+table_arr[57].element[4] = 1
+table_arr[57].element[5] = 1
+
+
+
+table_arr[58].element[0] = 0
+table_arr[58].element[1] = 1
+table_arr[58].element[2] = 0
+table_arr[58].element[3] = 1
+table_arr[58].element[4] = 1
+table_arr[58].element[5] = 1
+
+
+
+table_arr[59].element[0] = 1
+table_arr[59].element[1] = 1
+table_arr[59].element[2] = 0
+table_arr[59].element[3] = 1
+table_arr[59].element[4] = 1
+table_arr[59].element[5] = 1
+
+
+
+table_arr[60].element[0] = 0
+table_arr[60].element[1] = 0
+table_arr[60].element[2] = 1
+table_arr[60].element[3] = 1
+table_arr[60].element[4] = 1
+table_arr[60].element[5] = 1
+
+
+
+table_arr[61].element[0] = 1
+table_arr[61].element[1] = 0
+table_arr[61].element[2] = 1
+table_arr[61].element[3] = 1
+table_arr[61].element[4] = 1
+table_arr[61].element[5] = 1
+
+
+
+table_arr[62].element[0] = 0
+table_arr[62].element[1] = 1
+table_arr[62].element[2] = 1
+table_arr[62].element[3] = 1
+table_arr[62].element[4] = 1
+table_arr[62].element[5] = 1
+
+
+
+table_arr[63].element[0] = 1
+table_arr[63].element[1] = 1
+table_arr[63].element[2] = 1
+table_arr[63].element[3] = 1
+table_arr[63].element[4] = 1
+table_arr[63].element[5] = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+table_arr[0].costInfinity
+
+
+
+table_arr[1].costInfinity
+
+
+
+table_arr[2].costInfinity
+
+
+
+table_arr[3].costInfinity
+
+
+
+table_arr[4].costInfinity
+
+
+
+table_arr[5].costInfinity
+
+
+
+table_arr[6].costInfinity
+
+
+
+table_arr[7].costInfinity
+
+
+
+table_arr[8].costInfinity
+
+
+
+table_arr[9].costInfinity
+
+
+
+table_arr[10].costInfinity
+
+
+
+table_arr[11].costInfinity
+
+
+
+table_arr[12].costInfinity
+
+
+
+table_arr[13].costInfinity
+
+
+
+table_arr[14].costInfinity
+
+
+
+table_arr[15].costInfinity
+
+
+
+table_arr[16].costInfinity
+
+
+
+table_arr[17].costInfinity
+
+
+
+table_arr[18].costInfinity
+
+
+
+table_arr[19].costInfinity
+
+
+
+table_arr[20].costInfinity
+
+
+
+table_arr[21].costInfinity
+
+
+
+table_arr[22].costInfinity
+
+
+
+table_arr[23].costInfinity
+
+
+
+table_arr[24].costInfinity
+
+
+
+table_arr[25].costInfinity
+
+
+
+table_arr[26].costInfinity
+
+
+
+table_arr[27].costInfinity
+
+
+
+table_arr[28].costInfinity
+
+
+
+table_arr[29].costInfinity
+
+
+
+table_arr[30].costInfinity
+
+
+
+table_arr[31].costInfinity
+
+
+
+table_arr[32].costInfinity
+
+
+
+table_arr[33].costInfinity
+
+
+
+table_arr[34].costInfinity
+
+
+
+table_arr[35].costInfinity
+
+
+
+table_arr[36].costInfinity
+
+
+
+table_arr[37].costInfinity
+
+
+
+table_arr[38].costInfinity
+
+
+
+table_arr[39].costInfinity
+
+
+
+table_arr[40].costInfinity
+
+
+
+table_arr[41].costInfinity
+
+
+
+table_arr[42].costInfinity
+
+
+
+table_arr[43].costInfinity
+
+
+
+table_arr[44].costInfinity
+
+
+
+table_arr[45].costInfinity
+
+
+
+table_arr[46].costInfinity
+
+
+
+table_arr[47].costInfinity
+
+
+
+table_arr[48].costInfinity
+
+
+
+table_arr[49].costInfinity
+
+
+
+table_arr[50].costInfinity
+
+
+
+table_arr[51].costInfinity
+
+
+
+table_arr[52].costInfinity
+
+
+
+table_arr[53].costInfinity
+
+
+
+table_arr[54].costInfinity
+
+
+
+table_arr[55].costInfinity
+
+
+
+table_arr[56].costInfinity
+
+
+
+table_arr[57].costInfinity
+
+
+
+table_arr[58].costInfinity
+
+
+
+table_arr[59].costInfinity
+
+
+
+table_arr[60].costInfinity
+
+
+
+table_arr[61].costInfinity
+
+
+
+table_arr[62].costInfinity
+
+
+
+table_arr[63].costInfinity
+
+
+

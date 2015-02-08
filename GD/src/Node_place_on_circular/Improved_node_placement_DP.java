@@ -80,6 +80,9 @@ public class Improved_node_placement_DP {
 		int tmp =0 , tmp1=0;
 		int k_mod_tmp =0;
 		
+		int Before_d_i_j_sum = 0, After_d_i_j_sum = 0;
+		
+		
 		for( tmp1=ordering_V[0] ; tmp1<ordering_V[0]+ordering_V.length ; tmp1++ )
 		{
 			if(tmp1>n-1) 
@@ -104,7 +107,7 @@ public class Improved_node_placement_DP {
 				{					
 					j_to_v0_length = d_i_j(ordering_V[0],j,n);
 					j_to_vk_length = d_i_j(ordering_V[ordering_V.length-1],j,n);
-					//System.out.printf("j_to_v0_length = %f	j_to_vk_length = %f \n",j_to_v0_length,j_to_vk_length);
+					System.out.printf("j_to_v0_length = %f	j_to_vk_length = %f \n",j_to_v0_length,j_to_vk_length);
 					
 					
 					
@@ -128,23 +131,20 @@ public class Improved_node_placement_DP {
 					//System.out.print(length(vertice_arr[left[0][left_index]].x-vertice_arr[left[1][left_index]].x, vertice_arr[left[0][left_index]].y - vertice_arr[left[1][left_index]].y));
 					//System.out.print("\n\n");
 						left_index++;
+						Before_d_i_j_sum += j_to_v0_length;
 					}
 					else
 					{
 						right[0][right_index] = i;
 						right[1][right_index] = j;
 						right_index++;
+						Before_d_i_j_sum += j_to_vk_length;
 					}		
 				}
 				tmp=0;
 			}
 		}
 		
-		
-		
-		if(ordering_V[0] == 10){
-			
-		}
 		for(i = 0 ; i<left_index  ; i++)
 			System.out.printf("%d	left = %d	%d \n",i,left[0][i],left[1][i]);
 		
@@ -407,7 +407,106 @@ public class Improved_node_placement_DP {
 		for( i=0 ; i<ordering_V.length ; i++ )
 		{
 			final_order_arr[i] = ordering_V[test_array[i]];
+			System.out.print("final_order_arr[" + i + "] = " + final_order_arr[i] +"\n");
 		}
+		
+		
+		
+		
+		left_index=0;
+		right_index=0;
+		
+		int aa=0;
+		
+		for( tmp1=ordering_V[0] ; tmp1<ordering_V[0]+ordering_V.length ; tmp1++ )
+		{
+			if(tmp1>n-1) 
+				i = tmp1 %n;
+			else 
+				i = tmp1; 
+			
+			for( j=0 ; j<n; j++ )
+			{	
+				
+				while(aa<final_order_arr.length)
+				{
+					 k_mod_tmp=final_order_arr[aa];
+						if(k_mod_tmp>n-1) 
+							k = k_mod_tmp %n;
+						else 
+							k = k_mod_tmp;
+						
+						if(j == k)tmp=1;
+						aa++;
+				}
+								
+				
+				if( graph[i][j] == 1 && i!=j && tmp == 0)
+				{					
+					j_to_v0_length = d_i_j(final_order_arr[0],j,n);
+					j_to_vk_length = d_i_j(final_order_arr[final_order_arr.length-1],j,n);
+					System.out.printf("j_to_v0_length = %f	j_to_vk_length = %f \n",j_to_v0_length,j_to_vk_length);
+					
+					
+					
+				/*
+				System.out.print("i = " + i + "\n");
+				System.out.print("j = " + j + "\n");
+				System.out.print("vertice_arr[j].x = " + vertice_arr[j].x + "\n");
+				System.out.print("vertice_arr[ordering_V[0]].x = " + vertice_arr[ordering_V[0]].x + "\n");
+				System.out.print("vertice_arr[j].y = " + vertice_arr[j].y + "\n");
+				System.out.print("vertice_arr[ordering_V[0]].y = " + vertice_arr[ordering_V[0]].y + "\n");
+				
+				System.out.print(j_to_v0_length + "\n");
+				System.out.print(j_to_vk_length + "\n\n\n");
+				*/
+					if( j_to_v0_length < j_to_vk_length)
+					{
+						left[0][left_index] = i;
+						left[1][left_index] = j;
+					//System.out.print("left[0][" + left_index + " ] = " + left[0][left_index] + "\n");
+					//System.out.print("left[1][" + left_index + " ] = " + left[1][left_index] + "\n");
+					//System.out.print(length(vertice_arr[left[0][left_index]].x-vertice_arr[left[1][left_index]].x, vertice_arr[left[0][left_index]].y - vertice_arr[left[1][left_index]].y));
+					//System.out.print("\n\n");
+						left_index++;
+						After_d_i_j_sum += j_to_v0_length;
+					}
+					else
+					{
+						right[0][right_index] = i;
+						right[1][right_index] = j;
+						right_index++;
+						After_d_i_j_sum += j_to_vk_length;
+					}		
+				}
+				tmp=0;
+			}
+		}
+		
+		
+		
+		
+		
+		
+		System.out.printf("Before_d_i_j_sum	=	%d		After_d_i_j_sum = %d	\n",Before_d_i_j_sum,After_d_i_j_sum);
+		
+		
+		for(i = 0 ; i<left_index  ; i++)
+			System.out.printf("%d	left = %d	%d \n",i,left[0][i],left[1][i]);
+		
+		System.out.printf("\n\n\n");
+		
+		for(i = 0 ; i<right_index  ; i++)
+			System.out.printf("right = %d	%d \n",right[0][i],right[1][i]);
+		System.out.printf("\n\n\n");
+		
+		
+		
+		
+		
+		
+		
+		
 	
 		return final_order_arr;
 	

@@ -1,0 +1,200 @@
+vertices_orderiing[0] = 4
+
+vertices_orderiing[1] = 97
+
+vertices_orderiing[2] = 73
+
+vertices_orderiing[3] = 79
+
+vertices_orderiing[4] = 2
+
+vertices_orderiing[5] = 8
+
+vertices_orderiing[6] = 9
+
+vertices_orderiing[7] = 3
+
+vertices_orderiing[8] = 10
+
+vertices_orderiing[9] = 11
+
+vertices_orderiing[10] = 12
+
+vertices_orderiing[11] = 15
+
+vertices_orderiing[12] = 14
+
+vertices_orderiing[13] = 6
+
+vertices_orderiing[14] = 17
+
+vertices_orderiing[15] = 16
+
+vertices_orderiing[16] = 7
+
+vertices_orderiing[17] = 19
+
+vertices_orderiing[18] = 13
+
+vertices_orderiing[19] = 18
+
+vertices_orderiing[20] = 24
+
+vertices_orderiing[21] = 23
+
+vertices_orderiing[22] = 25
+
+vertices_orderiing[23] = 20
+
+vertices_orderiing[24] = 26
+
+vertices_orderiing[25] = 21
+
+vertices_orderiing[26] = 28
+
+vertices_orderiing[27] = 31
+
+vertices_orderiing[28] = 27
+
+vertices_orderiing[29] = 29
+
+vertices_orderiing[30] = 33
+
+vertices_orderiing[31] = 34
+
+vertices_orderiing[32] = 35
+
+vertices_orderiing[33] = 36
+
+vertices_orderiing[34] = 37
+
+vertices_orderiing[35] = 22
+
+vertices_orderiing[36] = 39
+
+vertices_orderiing[37] = 41
+
+vertices_orderiing[38] = 42
+
+vertices_orderiing[39] = 38
+
+vertices_orderiing[40] = 30
+
+vertices_orderiing[41] = 43
+
+vertices_orderiing[42] = 44
+
+vertices_orderiing[43] = 46
+
+vertices_orderiing[44] = 47
+
+vertices_orderiing[45] = 49
+
+vertices_orderiing[46] = 50
+
+vertices_orderiing[47] = 48
+
+vertices_orderiing[48] = 52
+
+vertices_orderiing[49] = 40
+
+vertices_orderiing[50] = 32
+
+vertices_orderiing[51] = 51
+
+vertices_orderiing[52] = 53
+
+vertices_orderiing[53] = 54
+
+vertices_orderiing[54] = 58
+
+vertices_orderiing[55] = 55
+
+vertices_orderiing[56] = 56
+
+vertices_orderiing[57] = 61
+
+vertices_orderiing[58] = 62
+
+vertices_orderiing[59] = 60
+
+vertices_orderiing[60] = 57
+
+vertices_orderiing[61] = 63
+
+vertices_orderiing[62] = 64
+
+vertices_orderiing[63] = 67
+
+vertices_orderiing[64] = 68
+
+vertices_orderiing[65] = 69
+
+vertices_orderiing[66] = 65
+
+vertices_orderiing[67] = 45
+
+vertices_orderiing[68] = 70
+
+vertices_orderiing[69] = 71
+
+vertices_orderiing[70] = 59
+
+vertices_orderiing[71] = 66
+
+vertices_orderiing[72] = 74
+
+vertices_orderiing[73] = 77
+
+vertices_orderiing[74] = 78
+
+vertices_orderiing[75] = 72
+
+vertices_orderiing[76] = 75
+
+vertices_orderiing[77] = 81
+
+vertices_orderiing[78] = 82
+
+vertices_orderiing[79] = 83
+
+vertices_orderiing[80] = 84
+
+vertices_orderiing[81] = 76
+
+vertices_orderiing[82] = 80
+
+vertices_orderiing[83] = 87
+
+vertices_orderiing[84] = 86
+
+vertices_orderiing[85] = 89
+
+vertices_orderiing[86] = 85
+
+vertices_orderiing[87] = 90
+
+vertices_orderiing[88] = 91
+
+vertices_orderiing[89] = 92
+
+vertices_orderiing[90] = 93
+
+vertices_orderiing[91] = 94
+
+vertices_orderiing[92] = 95
+
+vertices_orderiing[93] = 88
+
+vertices_orderiing[94] = 96
+
+vertices_orderiing[95] = 98
+
+vertices_orderiing[96] = 1
+
+vertices_orderiing[97] = 99
+
+vertices_orderiing[98] = 0
+
+vertices_orderiing[99] = 5
+
